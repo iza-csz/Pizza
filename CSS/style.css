@@ -7,13 +7,14 @@
 body{
 background-color: white;
 }
-
+header{
+    background-color: white;
+}
 .one{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 #h3{
     margin-left: 497px;
 
@@ -42,8 +43,7 @@ text-align: center;
 color: white;
 font-weight: bold;
 border-radius: 5px;
-
-
+cursor: pointer;
 }
 
 /* --------------------------------------------------
