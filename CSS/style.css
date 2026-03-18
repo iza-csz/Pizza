@@ -148,3 +148,41 @@ font-size: large;
     padding: 2rem 1rem;
   }
 }
+.bloco-texto, .bloco-imagem {
+  /* Impede que os blocos encolham ou cresçam de forma desigual */
+  flex: 1 1 50%; /* flex-grow: 1, flex-shrink: 1, flex-basis: 50% */
+  /* Isso faz com que cada bloco tente ocupar 50% da largura disponível */
+}
+
+.secao-flex {
+  display: flex; /* Ativa o Flexbox no container pai */
+  align-items: center; /* Centraliza verticalmente o texto e a imagem */
+  justify-content: space-between; /* Distribui o espaço extra entre os elementos */
+  gap: 40px; /* Adiciona um espaço fixo entre o texto e a imagem */
+  padding: 50px 10%; /* Adiciona preenchimento nas laterais e no topo/fundo */
+}
+
+/* Estilos Específicos para a Imagem */
+.bloco-imagem img {
+  max-width: 150%; /* Garante que a imagem não ultrapasse o tamanho do seu bloco */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaços em branco indesejados abaixo da imagem */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+}
+
+/* --- A Mágica da Inversão --- */
+.secao-invertida {
+  flex-direction: row-reverse; /* Inverte a ordem horizontal dos elementos filhos */
+}
+
+.bloco-texto{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
