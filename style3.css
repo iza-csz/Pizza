@@ -9,32 +9,25 @@ body{
     margin-right: 30px;
 }
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 colunas */
-    grid-template-rows: 1fr 1fr;   /* 2 linhas */
-    gap: 10px;
-    height: 400px;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: space-between; /* Espaça os elementos */
+  padding: 50px 10%;
+  gap: 40px; /* Espaço entre texto e imagem */
 }
 
-.box {
-    background: white;
-    align-items: center;
+.content {
+  flex: 1; /* Faz o texto ocupar metade do espaço */
 }
 
-.paragrafo{
-    font-family: Montserrat;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 25px;
-    line-height: 100%;
-    letter-spacing: 0%;
+.image-placeholder {
+  flex: 1; /* Faz a imagem ocupar a outra metade */
+  height: 300px;
+  border-radius: 8px;
 }
 
-.apresentacao{
-    font-family: Montserrat;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 45px;
-    line-height: 100%;
-    letter-spacing: 0%;
+/* Classe para inverter a ordem na segunda seção */
+.reverse {
+  flex-direction: row-reverse;
 }
+
