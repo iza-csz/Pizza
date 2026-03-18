@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: Montserrat;
+}
+
+body{
+background-color: white;
+margin-left: 60px;
+margin-right: 60px;
+}
+
+.one{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.text{
+    font-weight: 100;
+    font-style: Semi-Bold;
+    font-size: 19px;
+    margin-top: 30px;
+}
+
+.text img{
+    margin-top: 35px;
+}
+
+#h3{
+   font-weight: 500;
+   font-size: 25px;
+
+}
+
+.one img{
+    margin-left: auto;
+}
